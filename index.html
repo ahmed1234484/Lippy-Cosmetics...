@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Marketing - Logo Animation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/main.js" defer></script>
+
+</head>
+<body class="bg-gray-100 pt-16"> <!-- Add padding-top to body -->
+
+  <!-- Navigation Bar -->
+  <nav class="navbar p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-white">Product Marketing</a>
+      <ul class="flex items-center">
+        <li class="nav-item"><a href="#logo-section" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#products-section" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#contact-section" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Logo Section -->
+  <div class="flex flex-col justify-center items-center h-screen bg-gray-900 text-white" id="logo-section">
+    <img src="/images/logo.jpg" alt="Logo" class="w-64 logo">
+    <p class="mt-6 text-xl tagline">Luscious lips and radiant skin for your beauty glimpse</p>
+  </div>
+
+ <!-- Products Section -->
+ <section class="py-16" id="products-section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Featured Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        <!-- Product 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg product-card" id="product1">
+          <img src="/images/P_2.jpg" alt="Product 1" class="w-full h-56 object-cover rounded-lg product-image">
+          <h3 class="text-2xl font-semibold mt-4 text-gray-800">Lip Palm</h3>
+          <p class="mt-2 text-gray-600">Made from natural ingredients to deeply nourish your lips.</p>
+          <p class="mt-2 text-gray-600 font-semibold">Salary: $5000</p> <!-- Added salary -->
+          <div class="mt-6 flex space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View Details</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">Add to Cart</button> <!-- Added Add to Cart button -->
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg product-card" id="product2">
+          <img src="/images/P_1.jpg" alt="Product 2" class="w-full h-56 object-cover rounded-lg product-image">
+          <h3 class="text-2xl font-semibold mt-4 text-gray-800">Packge Offer</h3>
+          <p class="mt-2 text-gray-600">Get the perfect blend of care and creativity with this set! Enjoy soft, hydrated lips with Lip Palm, a glossy shine with Lip Gloss, and keep your ideas flowing in the stylish small notebook, all in one compact package.</p>
+          <p class="mt-2 text-gray-600 font-semibold">Salary: $4999</p> <!-- Added salary -->
+          <div class="mt-6 flex space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View Details</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">Add to Cart</button> <!-- Added Add to Cart button -->
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg product-card" id="product3">
+          <img src="/images/P_3.jpg" alt="Product 3" class="w-full h-56 object-cover rounded-lg product-image">
+          <h3 class="text-2xl font-semibold mt-4 text-gray-800">skin cream & Lip gloss</h3>
+          <p class="mt-2 text-gray-600">Pamper yourself with the ultimate beauty duo! Keep your skin soft and nourished with Skin Cream, while Lip Gloss adds a touch of shine and elegance to your lips. Perfect for glowing skin and radiant lips, all day long.</p>
+          <p class="mt-2 text-gray-600 font-semibold">Salary: $4998</p> <!-- Added salary -->
+          <div class="mt-6 flex space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View Details</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">Add to Cart</button> <!-- Added Add to Cart button -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Start About  -->
+  <!--  About  -->
+  <section class="py-16 bg-gray-200" id="about-section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">About Us</h2>
+      <p class="text-center text-gray-700 max-w-2xl mx-auto">We are a leading company in Cosmetics and skin care products, committed to transforming Our products into market leaders with innovative strategies and exceptional service. Our experienced team works closely with clients to develop tailored solutions that meet their unique needs.</p>
+    </div>
+  </section>
+
+  <!-- Start Contact  -->
+
+  <section class="py-16" id="contact-section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Contact Us</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" class="mt-2 p-2 w-full border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" class="mt-2 p-2 w-full border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" class="mt-2 p-2 w-full border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Send Message</button>
+      </form>
+    </div>
+    
+  </section>
+    <!-- End Contact  -->
+
+
+</body>
+</html>
